@@ -1,0 +1,122 @@
+1611729923a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:2288:"title = "Главная"
+url = "/"
+layout = "main"
+description = "Главная страница сайта"
+is_hidden = 0
+==
+<?php
+use Mike\Services\Models\Category;
+use Mike\Services\Models\Item;
+
+function onStart()
+{
+	if($this->param('category')) {
+
+		$this['current_category'] = Category::with(['items' => function($q){
+			$q->select('category_id', 'title', 'slug', 'data')->remember(60);
+		}])->select('id', 'title', 'slug')->whereSlug($this->param('category'))->remember(60)->first(); 
+		$this->page['title'] = $this['current_category']['title'];
+		if(!$this['current_category']){
+			return \Redirect::to('404');
+		}
+	}
+	$this['categories'] = Category::select('id', 'title', 'slug')->remember(60)->get();
+}
+?>
+==
+
+<div class="container">
+   <div class="row">
+
+      <div class="col-sm-12">
+         <div class="title-center">
+            <h1>Сервис профессиональных услуг</h1>
+            <div class="subtitle">Больше не нужно обращаться в разные фирмы что бы сделать все что нужно!</div>
+         </div>
+         <form action="#">
+            <div class="search">
+               <!-- <div class="inp-placeholder" id="placeholder"></div> -->
+               <input class="mr-sm-2" type="search" placeholder="Найти услуги">
+               <button type="submit" class="search-button">
+                  <i class="fa fa-search"></i>
+               </button>
+            </div>
+         </form>
+      </div>
+
+      {% for category in categories %}
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+         <div class="service">
+            <ul class="service-ul">
+               <li class="service-title">{{ category.title }}</li>
+               {% for item in category.items %}
+                  <li><a href="/{{ category.slug }}/{{ item.slug }}" class="service-link">
+                       {{ item.title }}
+                     </a></li>
+               {% endfor %}
+
+            </ul>
+            <div class="service-last"><a href="/{{ category.slug }}" class="service-link">Все услуги</a></div>
+         </div>
+      </div>
+      {% endfor %}
+
+      <!-- {% partial 'pricelist.htm' %} -->
+
+   </div>
+</div>";s:5:"mtime";i:1611693704;s:6:"markup";s:1540:"<div class="container">
+   <div class="row">
+
+      <div class="col-sm-12">
+         <div class="title-center">
+            <h1>Сервис профессиональных услуг</h1>
+            <div class="subtitle">Больше не нужно обращаться в разные фирмы что бы сделать все что нужно!</div>
+         </div>
+         <form action="#">
+            <div class="search">
+               <!-- <div class="inp-placeholder" id="placeholder"></div> -->
+               <input class="mr-sm-2" type="search" placeholder="Найти услуги">
+               <button type="submit" class="search-button">
+                  <i class="fa fa-search"></i>
+               </button>
+            </div>
+         </form>
+      </div>
+
+      {% for category in categories %}
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+         <div class="service">
+            <ul class="service-ul">
+               <li class="service-title">{{ category.title }}</li>
+               {% for item in category.items %}
+                  <li><a href="/{{ category.slug }}/{{ item.slug }}" class="service-link">
+                       {{ item.title }}
+                     </a></li>
+               {% endfor %}
+
+            </ul>
+            <div class="service-last"><a href="/{{ category.slug }}" class="service-link">Все услуги</a></div>
+         </div>
+      </div>
+      {% endfor %}
+
+      <!-- {% partial 'pricelist.htm' %} -->
+
+   </div>
+</div>";s:4:"code";s:596:"use Mike\Services\Models\Category;
+use Mike\Services\Models\Item;
+
+function onStart()
+{
+	if($this->param('category')) {
+
+		$this['current_category'] = Category::with(['items' => function($q){
+			$q->select('category_id', 'title', 'slug', 'data')->remember(60);
+		}])->select('id', 'title', 'slug')->whereSlug($this->param('category'))->remember(60)->first(); 
+		$this->page['title'] = $this['current_category']['title'];
+		if(!$this['current_category']){
+			return \Redirect::to('404');
+		}
+	}
+	$this['categories'] = Category::select('id', 'title', 'slug')->remember(60)->get();
+}";s:5:"title";s:14:"Главная";s:3:"url";s:1:"/";s:6:"layout";s:4:"main";s:11:"description";s:42:"Главная страница сайта";s:9:"is_hidden";s:1:"0";}}

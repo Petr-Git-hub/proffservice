@@ -1,0 +1,6 @@
+==
+<ul>
+{% for category in categories %}
+<li{{ current_category.slug == category.slug ? ' class="active"' }}><a href="/{{ category.slug }}">{{ category.title }}</a></li>
+{% endfor %}
+</ul>

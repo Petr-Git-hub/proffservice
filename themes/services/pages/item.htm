@@ -1,0 +1,44 @@
+title = "Услуги"
+url = "/:category?|^[a-z0-9\-]+$/:item?||^[a-z0-9\-]+$"
+layout = "main"
+description = "Главная страница сайта"
+meta_title = "СЕРВИС ПРОФЕССИОНАЛЬНЫХ УСЛУГ"
+is_hidden = 0
+==
+<?php
+use Mike\Services\Models\Category;
+use Mike\Services\Models\Item;
+
+function onStart()
+{
+	$this['current_category'] = Category::select('id', 'title', 'slug')
+								->whereSlug($this->param('category'))
+								->remember(60)->first();
+	$this['current_item']     = Item::select('id', 'title', 'slug', 'data')
+								->whereSlug($this->param('item'))
+								->remember(60)->first();
+
+	if(!$this['current_category'] || !$this['current_item']){
+		return \Redirect::to('404');
+	}
+
+	$this->page['title'] = $this['current_category']['title'].' / '.$this['current_item']['title'];
+
+	$this['categories'] = Category::select('id', 'title', 'slug')->remember(60)->get();
+}
+?>
+==
+<div class="container">
+	<div class="row" style="flex-wrap: nowrap;">
+		<div class="col">
+			<div class="categories">
+				{% partial 'services.htm' %}
+			</div>	
+		</div>
+		<div class="col">
+			<div class="pricelist">
+				{% partial 'pricelist-item.htm' %}
+			</div>
+		</div>
+	</div>
+</div>

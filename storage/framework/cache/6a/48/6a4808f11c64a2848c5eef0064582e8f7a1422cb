@@ -1,0 +1,25 @@
+1611729924a:1:{s:21:"footer_menu_left.yaml";a:7:{s:8:"fileName";s:21:"footer_menu_left.yaml";s:7:"content";s:531:"items:
+    -
+        title: 'Все услуги'
+        type: cms-page
+        code: ''
+        reference: category
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Наши контакты'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: contacts
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: компания
+";s:5:"mtime";i:1611689288;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}

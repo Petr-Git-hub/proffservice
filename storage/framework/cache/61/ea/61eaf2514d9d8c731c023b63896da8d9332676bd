@@ -1,0 +1,28 @@
+1611729924a:1:{s:16:"services.bak.htm";a:6:{s:8:"fileName";s:16:"services.bak.htm";s:7:"content";s:480:"==
+<ul>
+{% for category in categories %}
+    <li class="{{ current_category.slug == category.slug ? : 'closed' }}"><span>{{ category.title }}</span>
+	{% if category.items %}
+	
+        <ul>
+            {% for item in category.items %}
+                <li><a href="/{{ category.slug }}/{{ item.slug }}" class="{{ current_item.slug == item.slug ? 'active' }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>";s:5:"mtime";i:1610720401;s:6:"markup";s:476:"<ul>
+{% for category in categories %}
+    <li class="{{ current_category.slug == category.slug ? : 'closed' }}"><span>{{ category.title }}</span>
+	{% if category.items %}
+	
+        <ul>
+            {% for item in category.items %}
+                <li><a href="/{{ category.slug }}/{{ item.slug }}" class="{{ current_item.slug == item.slug ? 'active' }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

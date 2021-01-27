@@ -1,0 +1,113 @@
+1611729924a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2659:"<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-12 text-center">
+				<a class="logo" href="{{ url('/') }}">PROFFSERVICE<span class="logo-subtitle mt-1">сервис проффесиональных услуг</span></a>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-4">
+				<div class="footer-menu-title">Компания</div>
+				<ul class="footer-menu">
+					{% for item in footerMenuLeft.menuItems %}
+					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+					{% endfor %}
+					<!-- <li><a href="#">О нас</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Все услуги</a></li>
+					<li><a href="#">Наши контакты</a></li> -->
+				</ul>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-4">
+				<div class="footer-menu-title">Магазинам</div>
+			<ul class="footer-menu">
+				{% for item in footerMenuCenter.menuItems %}
+				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+				{% endfor %}
+					<!-- <li><a href="#">Гарантии</a></li>
+					<li><a href="#">Вопросы и ответы</a></li>
+					<li><a href="#">Публичная оферта</a></li>
+					<li><a href="#">Конфиденциальность</a></li> -->
+				</ul>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-4">
+				<div class="footer-menu-title">Для бизнеса</div>
+				<ul class="footer-menu">
+					{% for item in footerMenuRight.menuItems %}
+					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+					{% endfor %}
+					<!-- <li><a href="#">Магазинам</a></li> -->
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12 flex-mob">
+				<button class="footer-support-btn" data-toggle="modal" data-target="#support">Служба поддержки</button>
+				<div class="nav-item phones">
+					<a class="tel" href="tel:89297453101"><i class="fa fa-phone-square mr-2"></i><span>8 (929) 745-31-01</span></a>
+					<a class="tel" href="tel:88342306055"><i class="fa fa-phone-square mr-2"></i><span>8 (8342)
+							30-60-55</span></a>
+				</div>
+				<ul class="footer-social">					
+					<li><a class="ic vk" href="#"><i class="fa fa-vk"></i></a></li>
+					<li><a class="ic whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+					<li><a class="ic telegram" href="#"><i class="fa fa-paper-plane"></i></i></a></li>
+					<li><a class="ic instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-copyright text-center">&copy; 2020 &laquo;PROFFSERVICE&raquo;. Все права защищены.</div>
+	</div>
+</footer>";s:5:"mtime";i:1611322526;s:6:"markup";s:2659:"<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-12 text-center">
+				<a class="logo" href="{{ url('/') }}">PROFFSERVICE<span class="logo-subtitle mt-1">сервис проффесиональных услуг</span></a>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-4">
+				<div class="footer-menu-title">Компания</div>
+				<ul class="footer-menu">
+					{% for item in footerMenuLeft.menuItems %}
+					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+					{% endfor %}
+					<!-- <li><a href="#">О нас</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Все услуги</a></li>
+					<li><a href="#">Наши контакты</a></li> -->
+				</ul>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-4">
+				<div class="footer-menu-title">Магазинам</div>
+			<ul class="footer-menu">
+				{% for item in footerMenuCenter.menuItems %}
+				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+				{% endfor %}
+					<!-- <li><a href="#">Гарантии</a></li>
+					<li><a href="#">Вопросы и ответы</a></li>
+					<li><a href="#">Публичная оферта</a></li>
+					<li><a href="#">Конфиденциальность</a></li> -->
+				</ul>
+			</div>
+			<div class="col-lg-2 col-md-4 col-sm-4">
+				<div class="footer-menu-title">Для бизнеса</div>
+				<ul class="footer-menu">
+					{% for item in footerMenuRight.menuItems %}
+					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+					{% endfor %}
+					<!-- <li><a href="#">Магазинам</a></li> -->
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12 flex-mob">
+				<button class="footer-support-btn" data-toggle="modal" data-target="#support">Служба поддержки</button>
+				<div class="nav-item phones">
+					<a class="tel" href="tel:89297453101"><i class="fa fa-phone-square mr-2"></i><span>8 (929) 745-31-01</span></a>
+					<a class="tel" href="tel:88342306055"><i class="fa fa-phone-square mr-2"></i><span>8 (8342)
+							30-60-55</span></a>
+				</div>
+				<ul class="footer-social">					
+					<li><a class="ic vk" href="#"><i class="fa fa-vk"></i></a></li>
+					<li><a class="ic whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+					<li><a class="ic telegram" href="#"><i class="fa fa-paper-plane"></i></i></a></li>
+					<li><a class="ic instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-copyright text-center">&copy; 2020 &laquo;PROFFSERVICE&raquo;. Все права защищены.</div>
+	</div>
+</footer>";s:4:"code";N;}}

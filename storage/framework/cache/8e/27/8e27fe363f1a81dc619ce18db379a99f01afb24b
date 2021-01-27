@@ -1,0 +1,66 @@
+1611511519a:1:{s:25:"static-pages/contacts.htm";a:7:{s:8:"fileName";s:25:"static-pages/contacts.htm";s:7:"content";s:394:"[viewBag]
+title = "контакты"
+url = "/contacts"
+layout = "main"
+is_hidden = 0
+navigation_hidden = 0
+==
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="contacts">
+
+				<p>email:</p>
+
+				<p>Viber:</p>
+
+				<p>Telegram:</p>
+
+				<p>Instagram:</p>
+
+				<p>Vkontakte:</p>
+
+				<p>WhatsApp:</p>
+			</div>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1611506665;s:6:"markup";s:275:"<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="contacts">
+
+				<p>email:</p>
+
+				<p>Viber:</p>
+
+				<p>Telegram:</p>
+
+				<p>Instagram:</p>
+
+				<p>Vkontakte:</p>
+
+				<p>WhatsApp:</p>
+			</div>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:16:"контакты";s:3:"url";s:9:"/contacts";s:6:"layout";s:4:"main";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:275:"<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="contacts">
+
+				<p>email:</p>
+
+				<p>Viber:</p>
+
+				<p>Telegram:</p>
+
+				<p>Instagram:</p>
+
+				<p>Vkontakte:</p>
+
+				<p>WhatsApp:</p>
+			</div>
+		</div>
+	</div>
+</div>";}}

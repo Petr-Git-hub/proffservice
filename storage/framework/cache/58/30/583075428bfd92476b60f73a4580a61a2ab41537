@@ -1,0 +1,101 @@
+1611729924a:1:{s:9:"modal.htm";a:5:{s:8:"fileName";s:9:"modal.htm";s:7:"content";s:2586:"
+
+<div class="modal fade nocolors in" id="appl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" style="max-width: 400px; width: 100%;">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="modal-close fa fa-times" data-dismiss="modal"></button>
+            <h6>ОСТАВЬЕТЕ ЗАЯВКУ И МЫ ВАМ ПЕРЕЗВОНИМ В ТЕЧЕНИИ 15 МИН</h6>
+         </div>
+         <div class="modal-body">
+            <form class="form text-top">
+               <input id="name" type="text" class="form-control text" placeholder="Имя" required>
+               <input id="emain" type="text" class="form-control text" placeholder="Телефон" required>
+               <div class="button-wrapper">
+                  <button class="btn form-btn" type="submit">Отправить заявку</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade nocolors in" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" style="max-width: 400px; width: 100%;">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="modal-close fa fa-times" data-dismiss="modal"></button>
+            <h5>Служба поддержки</h5>
+         </div>
+         <div class="modal-body">
+            <form class="form text-top">
+               <input id="name" type="text" class="form-control text" placeholder="Имя *">
+               <input id="emain" type="text" class="form-control text" placeholder="Телефон *">
+               <select class="form-control">
+                  <option>Причина обращения *</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+               <textarea class="form-control" placeholder="Опишите причину обращения *"></textarea>
+               <div class="button-wrapper">
+                  <button class="btn form-btn" type="submit">Отправить сообщение!</button>
+                  <a href="#" class="link">Политика конфиденциальности</a>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>";s:5:"mtime";i:1611298924;s:6:"markup";s:2582:"<div class="modal fade nocolors in" id="appl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" style="max-width: 400px; width: 100%;">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="modal-close fa fa-times" data-dismiss="modal"></button>
+            <h6>ОСТАВЬЕТЕ ЗАЯВКУ И МЫ ВАМ ПЕРЕЗВОНИМ В ТЕЧЕНИИ 15 МИН</h6>
+         </div>
+         <div class="modal-body">
+            <form class="form text-top">
+               <input id="name" type="text" class="form-control text" placeholder="Имя" required>
+               <input id="emain" type="text" class="form-control text" placeholder="Телефон" required>
+               <div class="button-wrapper">
+                  <button class="btn form-btn" type="submit">Отправить заявку</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade nocolors in" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" style="max-width: 400px; width: 100%;">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="modal-close fa fa-times" data-dismiss="modal"></button>
+            <h5>Служба поддержки</h5>
+         </div>
+         <div class="modal-body">
+            <form class="form text-top">
+               <input id="name" type="text" class="form-control text" placeholder="Имя *">
+               <input id="emain" type="text" class="form-control text" placeholder="Телефон *">
+               <select class="form-control">
+                  <option>Причина обращения *</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+               <textarea class="form-control" placeholder="Опишите причину обращения *"></textarea>
+               <div class="button-wrapper">
+                  <button class="btn form-btn" type="submit">Отправить сообщение!</button>
+                  <a href="#" class="link">Политика конфиденциальности</a>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>";s:4:"code";N;}}

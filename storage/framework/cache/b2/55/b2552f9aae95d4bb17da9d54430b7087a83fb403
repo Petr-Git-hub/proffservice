@@ -1,0 +1,183 @@
+1611729922a:1:{s:8:"main.htm";a:11:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:2751:"description = "Основной шаблон"
+
+[staticMenu]
+code = "header-menu"
+
+[staticPage]
+useContent = 1
+default = 1
+
+[staticMenu footerMenuLeft]
+code = "footer_menu_left"
+
+[staticMenu footerMenuCenter]
+code = "footer_menu_center"
+
+[staticMenu footerMenuRight]
+code = "footer_menu_right"
+==
+<?php
+use Mike\Services\Models\Item;
+
+function onStart()
+{
+	$this['json'] = new class {
+		public function decode($json_string){
+			return json_decode($json_string, true);
+		}
+	};
+	$this['format'] = new class {
+		public function price($price){
+			if(preg_match('~^[\d]+$~', $price))
+			{
+				return number_format($price, 0, '', ' ').' руб.';
+			} else {
+				$price = str_replace('цена по договоренности', 'договор.', $price);
+				return $price;
+			}
+		}
+	};
+}
+
+function onSearch()
+{
+	$q = filter_input(INPUT_POST, 'q', FILTER_SANITIZE_SPECIAL_CHARS);
+	if(empty($q)) return '';
+	$q = mb_strtolower($q);
+
+	$result = Db::table('mike_services_item as i')
+					->leftJoin('mike_services_category as c', 'i.category_id', '=', 'c.id')
+					->whereRaw('LOWER(i.data) LIKE "%'.$q.'%"')
+					->select('i.title', 'i.slug', 'c.slug as cslug', 'i.data')
+					->get();
+	$suggestions = [];
+	foreach($result as $cat)
+	{
+		$data = json_decode($cat->data);
+		foreach($data as $obj)
+		{
+			if(mb_strpos(mb_strtolower($obj->title), $q) !== false)
+			{
+				array_push($suggestions, [
+					'data' => [
+						'slug' => '/'.$cat->cslug.'/'.$cat->slug,
+						'category' => $cat->title,
+					],
+					'value' => $obj->title
+				]);
+			}
+		}
+	}
+	return json_encode($suggestions, JSON_UNESCAPED_UNICODE);
+}
+?>
+==
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ this.page.title }}</title>
+	<link rel="icon" type="image/png" href="{{ 'assets/img/favicon.png' | theme }}" />
+	<meta name="description" content="{{ this.page.meta_description}}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="{{ [
+		'assets/css/font-awesome.min.css',
+		'assets/fonts/fonts.css',
+		'assets/css/vendor.css',
+		'assets/css/style.css']|theme }}" rel="stylesheet"> {% styles %}
+</head>
+
+<body> {% partial 'header.htm' %} <section id="page" class="container">{% page %}</section> {% partial 'footer.htm' %}
+	{% partial 'modal.htm' %}
+	<script src="{{ [
+		'assets/js/jquery.min.js',
+		'assets/js/typeit.min.js',
+		'assets/js/jquery.autocomplete.min.js',
+		'assets/js/script.min.js']|theme }}"></script>
+	{% framework %}
+</body>
+
+</html>";s:5:"mtime";i:1611689807;s:6:"markup";s:1068:"<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ this.page.title }}</title>
+	<link rel="icon" type="image/png" href="{{ 'assets/img/favicon.png' | theme }}" />
+	<meta name="description" content="{{ this.page.meta_description}}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="{{ [
+		'assets/css/font-awesome.min.css',
+		'assets/fonts/fonts.css',
+		'assets/css/vendor.css',
+		'assets/css/style.css']|theme }}" rel="stylesheet"> {% styles %}
+</head>
+
+<body> {% partial 'header.htm' %} <section id="page" class="container">{% page %}</section> {% partial 'footer.htm' %}
+	{% partial 'modal.htm' %}
+	<script src="{{ [
+		'assets/js/jquery.min.js',
+		'assets/js/typeit.min.js',
+		'assets/js/jquery.autocomplete.min.js',
+		'assets/js/script.min.js']|theme }}"></script>
+	{% framework %}
+</body>
+
+</html>";s:4:"code";s:1352:"use Mike\Services\Models\Item;
+
+function onStart()
+{
+	$this['json'] = new class {
+		public function decode($json_string){
+			return json_decode($json_string, true);
+		}
+	};
+	$this['format'] = new class {
+		public function price($price){
+			if(preg_match('~^[\d]+$~', $price))
+			{
+				return number_format($price, 0, '', ' ').' руб.';
+			} else {
+				$price = str_replace('цена по договоренности', 'договор.', $price);
+				return $price;
+			}
+		}
+	};
+}
+
+function onSearch()
+{
+	$q = filter_input(INPUT_POST, 'q', FILTER_SANITIZE_SPECIAL_CHARS);
+	if(empty($q)) return '';
+	$q = mb_strtolower($q);
+
+	$result = Db::table('mike_services_item as i')
+					->leftJoin('mike_services_category as c', 'i.category_id', '=', 'c.id')
+					->whereRaw('LOWER(i.data) LIKE "%'.$q.'%"')
+					->select('i.title', 'i.slug', 'c.slug as cslug', 'i.data')
+					->get();
+	$suggestions = [];
+	foreach($result as $cat)
+	{
+		$data = json_decode($cat->data);
+		foreach($data as $obj)
+		{
+			if(mb_strpos(mb_strtolower($obj->title), $q) !== false)
+			{
+				array_push($suggestions, [
+					'data' => [
+						'slug' => '/'.$cat->cslug.'/'.$cat->slug,
+						'category' => $cat->title,
+					],
+					'value' => $obj->title
+				]);
+			}
+		}
+	}
+	return json_encode($suggestions, JSON_UNESCAPED_UNICODE);
+}";s:11:"description";s:29:"Основной шаблон";s:10:"staticMenu";a:1:{s:4:"code";s:11:"header-menu";}s:10:"staticPage";a:2:{s:10:"useContent";s:1:"1";s:7:"default";s:1:"1";}s:25:"staticMenu footerMenuLeft";a:1:{s:4:"code";s:16:"footer_menu_left";}s:27:"staticMenu footerMenuCenter";a:1:{s:4:"code";s:18:"footer_menu_center";}s:26:"staticMenu footerMenuRight";a:1:{s:4:"code";s:17:"footer_menu_right";}}}

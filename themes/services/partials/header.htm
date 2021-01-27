@@ -1,0 +1,57 @@
+description = "Шапка сайта"
+==
+<!-- если страница index.htm то к header добавить class index  -->
+<header {% if this.page.id=='index' %}class="index" {% endif %}>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<a class="logo" href="{{ url('/') }}">PROFFSERVICE
+				<span class="logo-subtitle pt-1">сервис проффесиональных услуг</span>
+			</a>
+
+			<form action="#" class="navbar-form indexNone">
+				<div class="city">
+					<a class="city-link" href="#"><i class="fa fa-dot-circle-o mr-2"></i><span>Саранск</span></a>
+				</div>
+				<div class="navbar-search ">
+					<div class="header-search">
+						<input id="header-search" type="search" placeholder="Найти услуги" autocomplete="off"><button
+							type="button" class="search-button ico-search-button"></button>
+					</div>
+				</div>
+			</form>
+			<button class="hamburger hamburger--spin" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<ul class="nav navbar-nav navbar-right ">
+				{% for item in staticMenu.menuItems %}
+				<li class="addIndex"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+				{% endfor %}
+			</ul>
+			<!-- {% component "header_menu" selected_item=this.page.title|lower before_url_item_label="<a href=%1$s
+				class=nav-link>" after_url_item_label="</a>" %} -->
+			<!--     <ul class="nav navbar-nav navbar-right ">
+		    <li class="addIndex"><a class="nav-link" href="{{ url('/category') }}">Все услуги</a></li>
+		    <li class="addIndex"><a class="nav-link" href="#">Вакансии</a></li>
+		    <li class="addIndex"><a class="nav-link" href="#">Контакты</a></li>
+		    <li class="addIndex"><a class="nav-link" href="#">Партнерская программа</a></li>
+		    <li class="addIndex"><a class="nav-link" href="#">О нас</a></li>
+		</ul> -->
+
+			<div class="vcard">
+				<div class="indexNone workhours opening-hours">с 9:00 до 20:00</div>
+				<div class="nav-item phones">
+					<button type="button" data-toggle="modal" data-target="#appl" class="addIndex btn">Оставить
+						заявку</button>
+					<a class="tel" href="tel:89297453101"><i class="fa fa-phone-square mr-2"></i><span>8 (929)
+							745-31-01</span></a>
+					<a class="tel" href="tel:88342306055"><i class="fa fa-phone-square mr-2"></i><span>8 (8342)
+							30-60-55</span></a>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+	
+</header>

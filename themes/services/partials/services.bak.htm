@@ -1,0 +1,15 @@
+==
+<ul>
+{% for category in categories %}
+    <li class="{{ current_category.slug == category.slug ? : 'closed' }}"><span>{{ category.title }}</span>
+	{% if category.items %}
+	
+        <ul>
+            {% for item in category.items %}
+                <li><a href="/{{ category.slug }}/{{ item.slug }}" class="{{ current_item.slug == item.slug ? 'active' }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>

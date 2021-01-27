@@ -1,0 +1,15 @@
+items:
+    -
+        title: магазинам
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: magazinam
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'для бизнеса'

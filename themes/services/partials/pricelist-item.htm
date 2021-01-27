@@ -1,0 +1,14 @@
+<h1>{{ current_category.title }}</h1>
+<h2><a href="/{{ current_category.slug }}/{{ current_item.slug }}">{{ current_item.title }}</a></h2>
+{% set pricelist_data = json.decode(current_item.data) %}
+<table class="pricelist-table">
+	{% for row in pricelist_data %}
+	<tr class="pricelist-row">
+		<td class="pricelist-title"><div>{{ row.title | raw }}</div><span></span></td>
+		<td class="pricelist-price text-nowrap">{{ format.price(row.price) | raw }}</td>
+		<td class="pricelist-measure text-nowrap">{{ row.measure | raw }}</td>
+		<td><button class="pricelist-order-btn">заказать</button></td>
+	</tr>
+	{% endfor %}
+</table>
+

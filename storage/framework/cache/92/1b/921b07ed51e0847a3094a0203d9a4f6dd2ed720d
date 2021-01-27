@@ -1,0 +1,33 @@
+1611729924a:1:{s:13:"pricelist.htm";a:5:{s:8:"fileName";s:13:"pricelist.htm";s:7:"content";s:865:"<h1>{{ current_category.title }}</h1>
+{% for pricelist in current_category.items %}
+<h2><a href="/{{ current_category.slug }}/{{ pricelist.slug }}">{{ pricelist.title }}</a></h2>
+{% set pricelist_data = json.decode(pricelist.data) %}
+<table class="pricelist-table">
+	{% for row in pricelist_data %}
+	{{ loop.index == 5 ? '<tr class="pricelist-more"><td colspan="3"><a href="javascript:void(0);">Показать еще</a></td></tr>' }}
+	<tr class="pricelist-row{{ loop.index > 4 ? ' hidden'}}">
+		<td class="pricelist-title"><div>{{ row.title | raw }}</div><span></span></td>
+		<td class="pricelist-price text-nowrap">{{ format.price(row.price) | raw }}</td>
+		<td class="pricelist-measure text-nowrap">{{ row.measure | raw }}</td>
+		<td><button class="pricelist-order-btn">заказать</button></td>
+	</tr>
+	{% endfor %}
+</table>
+
+{% endfor %}";s:5:"mtime";i:1610720401;s:6:"markup";s:865:"<h1>{{ current_category.title }}</h1>
+{% for pricelist in current_category.items %}
+<h2><a href="/{{ current_category.slug }}/{{ pricelist.slug }}">{{ pricelist.title }}</a></h2>
+{% set pricelist_data = json.decode(pricelist.data) %}
+<table class="pricelist-table">
+	{% for row in pricelist_data %}
+	{{ loop.index == 5 ? '<tr class="pricelist-more"><td colspan="3"><a href="javascript:void(0);">Показать еще</a></td></tr>' }}
+	<tr class="pricelist-row{{ loop.index > 4 ? ' hidden'}}">
+		<td class="pricelist-title"><div>{{ row.title | raw }}</div><span></span></td>
+		<td class="pricelist-price text-nowrap">{{ format.price(row.price) | raw }}</td>
+		<td class="pricelist-measure text-nowrap">{{ row.measure | raw }}</td>
+		<td><button class="pricelist-order-btn">заказать</button></td>
+	</tr>
+	{% endfor %}
+</table>
+
+{% endfor %}";s:4:"code";N;}}

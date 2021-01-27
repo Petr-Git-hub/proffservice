@@ -1,0 +1,216 @@
+1611729921a:1:{s:26:"partnerskaya-programma.htm";a:7:{s:8:"fileName";s:26:"partnerskaya-programma.htm";s:7:"content";s:3669:"[viewBag]
+title = "Партнерская программа"
+url = "/partnerskaya-programma"
+layout = "main"
+is_hidden = 0
+navigation_hidden = 0
+meta_title = "Предлагаем 10 % от суммы заказа!"
+meta_description = "Если Вы знаете и можете привлекать поток клиентов и гнать трафик, возможно Вас заинтересует наша
+партнерская программа! Мы можем предложить условия в 10 % от суммы выполненного заказа!Со своей стороны мы
+заинтересованы в максимальном привлечении потенциальных клиентов!"
+==
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="part-title">
+				<h1>Предлагаем 10 % от суммы заказа!</h1>
+				<h4 class="oc-text-uppercase">РАССМОТРИМ ЛЮБЫЕ ПРЕДЛОЖЕНИЯ</h4>
+			</div>
+			<div class="part-text">
+				<div class="subtitle">Если Вы знаете и можете привлекать поток клиентов и гнать трафик, возможно Вас
+					заинтересует наша партнерская программа! Мы можем предложить условия в 10 % от суммы выполненного заказа!
+					<br>Со своей стороны мы заинтересованы в максимальном привлечении потенциальных клиентов!
+				</div>
+			</div>
+
+
+		</div>
+		<div class="col-lg-4 col-sm-6 col-12">
+			<ul>
+				<li>пресса</li>
+				<li>радио</li>
+				<li>телевидение</li>
+				<li>билборды</li>
+				<li>витрины</li>
+				<li>вывески</li>
+				<li>листовки</li>
+				<li>визитки</li>
+				<li>щиты</li>
+				<li>доски объявлений</li>
+				<li>указатели</li>
+				<li>штендеры</li>
+			</ul>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-12">
+			<ul>
+				<li>контекстная реклама в Google</li>
+				<li>контекстная реклама в Яндекс</li>
+				<li>сайт или блог</li>
+				<li>видео реклама на YouTube</li>
+				<li>email рассылка</li>
+				<li>поисковое продвижение SЕО</li>
+				<li>собственные страницы в социальных сетях</li>
+				<li>таргетированная реклама в социальных сетях</li>
+				<li>площадки объявлений</li>
+				<li>маркетинг</li>
+			</ul>
+		</div>
+		<div class="col-lg-4 col-md-12 col-12">
+			<div class="form-box">
+				<div class="form-titleBox">
+					<div class="form-title">ОСТАВИТЬ ЗАЯВКУ</div>
+					<p class="form-subtitle">НА ПАРТНЕРСКУЮ ПРОГРАММУ</p>
+				</div>
+				<form class="form text-top">
+					<input id="name" type="text" class="form-control text" placeholder="Имя" required>
+					<input id="emain" type="text" class="form-control text" placeholder="Телефон" required>
+					<div class="button-wrapper">
+						<button class="btn form-btn" type="submit">Отправить заявку</button>
+					</div>
+					<div class="form-linkBox">
+						<span class="d-block">Нажимая кнопку, вы даете согласие на</span>
+						<a href="#" class="dashed form-link">обработку персональных данных</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>";s:5:"mtime";i:1611300534;s:6:"markup";s:2919:"<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="part-title">
+				<h1>Предлагаем 10 % от суммы заказа!</h1>
+				<h4 class="oc-text-uppercase">РАССМОТРИМ ЛЮБЫЕ ПРЕДЛОЖЕНИЯ</h4>
+			</div>
+			<div class="part-text">
+				<div class="subtitle">Если Вы знаете и можете привлекать поток клиентов и гнать трафик, возможно Вас
+					заинтересует наша партнерская программа! Мы можем предложить условия в 10 % от суммы выполненного заказа!
+					<br>Со своей стороны мы заинтересованы в максимальном привлечении потенциальных клиентов!
+				</div>
+			</div>
+
+
+		</div>
+		<div class="col-lg-4 col-sm-6 col-12">
+			<ul>
+				<li>пресса</li>
+				<li>радио</li>
+				<li>телевидение</li>
+				<li>билборды</li>
+				<li>витрины</li>
+				<li>вывески</li>
+				<li>листовки</li>
+				<li>визитки</li>
+				<li>щиты</li>
+				<li>доски объявлений</li>
+				<li>указатели</li>
+				<li>штендеры</li>
+			</ul>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-12">
+			<ul>
+				<li>контекстная реклама в Google</li>
+				<li>контекстная реклама в Яндекс</li>
+				<li>сайт или блог</li>
+				<li>видео реклама на YouTube</li>
+				<li>email рассылка</li>
+				<li>поисковое продвижение SЕО</li>
+				<li>собственные страницы в социальных сетях</li>
+				<li>таргетированная реклама в социальных сетях</li>
+				<li>площадки объявлений</li>
+				<li>маркетинг</li>
+			</ul>
+		</div>
+		<div class="col-lg-4 col-md-12 col-12">
+			<div class="form-box">
+				<div class="form-titleBox">
+					<div class="form-title">ОСТАВИТЬ ЗАЯВКУ</div>
+					<p class="form-subtitle">НА ПАРТНЕРСКУЮ ПРОГРАММУ</p>
+				</div>
+				<form class="form text-top">
+					<input id="name" type="text" class="form-control text" placeholder="Имя" required>
+					<input id="emain" type="text" class="form-control text" placeholder="Телефон" required>
+					<div class="button-wrapper">
+						<button class="btn form-btn" type="submit">Отправить заявку</button>
+					</div>
+					<div class="form-linkBox">
+						<span class="d-block">Нажимая кнопку, вы даете согласие на</span>
+						<a href="#" class="dashed form-link">обработку персональных данных</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:41:"Партнерская программа";s:3:"url";s:23:"/partnerskaya-programma";s:6:"layout";s:4:"main";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:10:"meta_title";s:55:"Предлагаем 10 % от суммы заказа!";s:16:"meta_description";s:497:"Если Вы знаете и можете привлекать поток клиентов и гнать трафик, возможно Вас заинтересует наша
+партнерская программа! Мы можем предложить условия в 10 % от суммы выполненного заказа!Со своей стороны мы
+заинтересованы в максимальном привлечении потенциальных клиентов!";}s:12:"parsedMarkup";s:2919:"<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="part-title">
+				<h1>Предлагаем 10 % от суммы заказа!</h1>
+				<h4 class="oc-text-uppercase">РАССМОТРИМ ЛЮБЫЕ ПРЕДЛОЖЕНИЯ</h4>
+			</div>
+			<div class="part-text">
+				<div class="subtitle">Если Вы знаете и можете привлекать поток клиентов и гнать трафик, возможно Вас
+					заинтересует наша партнерская программа! Мы можем предложить условия в 10 % от суммы выполненного заказа!
+					<br>Со своей стороны мы заинтересованы в максимальном привлечении потенциальных клиентов!
+				</div>
+			</div>
+
+
+		</div>
+		<div class="col-lg-4 col-sm-6 col-12">
+			<ul>
+				<li>пресса</li>
+				<li>радио</li>
+				<li>телевидение</li>
+				<li>билборды</li>
+				<li>витрины</li>
+				<li>вывески</li>
+				<li>листовки</li>
+				<li>визитки</li>
+				<li>щиты</li>
+				<li>доски объявлений</li>
+				<li>указатели</li>
+				<li>штендеры</li>
+			</ul>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-12">
+			<ul>
+				<li>контекстная реклама в Google</li>
+				<li>контекстная реклама в Яндекс</li>
+				<li>сайт или блог</li>
+				<li>видео реклама на YouTube</li>
+				<li>email рассылка</li>
+				<li>поисковое продвижение SЕО</li>
+				<li>собственные страницы в социальных сетях</li>
+				<li>таргетированная реклама в социальных сетях</li>
+				<li>площадки объявлений</li>
+				<li>маркетинг</li>
+			</ul>
+		</div>
+		<div class="col-lg-4 col-md-12 col-12">
+			<div class="form-box">
+				<div class="form-titleBox">
+					<div class="form-title">ОСТАВИТЬ ЗАЯВКУ</div>
+					<p class="form-subtitle">НА ПАРТНЕРСКУЮ ПРОГРАММУ</p>
+				</div>
+				<form class="form text-top">
+					<input id="name" type="text" class="form-control text" placeholder="Имя" required>
+					<input id="emain" type="text" class="form-control text" placeholder="Телефон" required>
+					<div class="button-wrapper">
+						<button class="btn form-btn" type="submit">Отправить заявку</button>
+					</div>
+					<div class="form-linkBox">
+						<span class="d-block">Нажимая кнопку, вы даете согласие на</span>
+						<a href="#" class="dashed form-link">обработку персональных данных</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>";}}

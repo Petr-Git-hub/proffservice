@@ -1,0 +1,43 @@
+title = "Все услуги"
+url = "/category"
+layout = "main"
+meta_title = "СЕРВИС ПРОФЕССИОНАЛЬНЫХ УСЛУГ"
+is_hidden = 0
+==
+
+<?php
+use Mike\Services\Models\Category;
+use Mike\Services\Models\Item;
+
+function onStart()
+{
+	if($this->param('category')) {
+
+		$this['current_category'] = Category::with(['items' => function($q){
+			$q->select('category_id', 'title', 'slug', 'data')->remember(60);
+		}])->select('id', 'title', 'slug')->whereSlug($this->param('category'))->remember(60)->first(); 
+		$this->page['title'] = $this['current_category']['title'];
+		if(!$this['current_category']){
+			return \Redirect::to('404');
+		}
+	}
+	$this['categories'] = Category::select('id', 'title', 'slug')->remember(60)->get();
+}
+?>
+==
+
+
+<div class="container">
+   <div class="row" style="flex-wrap: nowrap;">
+      <div class="col">
+         <div class="categories">
+            {% partial 'services.htm' %}
+         </div>
+      </div>
+      <div class="col">
+         <div class="pricelist">
+            {% partial 'pricelist.htm' %}
+         </div>
+      </div>
+   </div>
+</div>

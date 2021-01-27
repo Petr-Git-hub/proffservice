@@ -1,0 +1,48 @@
+1611729923a:1:{s:7:"404.htm";a:9:{s:8:"fileName";s:7:"404.htm";s:7:"content";s:1615:"title = "Страница не найдена (404)"
+url = "/404"
+layout = "main"
+is_hidden = 0
+==
+<style>
+body { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>
+                    Страница не найдена!</h1>
+                <h2>
+                    Ошибка 404</h2>
+                <div class="error-actions">
+                    <a href="/" class="btn btn-primary btn-lg"><i class="fa fa-home mr-2"></i>
+                        Перейти на главную </a><a href="#" class="btn btn-default btn-lg"><i class="fa fa-envelope mr-2"></i>Служба поддержки </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1610720401;s:6:"markup";s:1511:"<style>
+body { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>
+                    Страница не найдена!</h1>
+                <h2>
+                    Ошибка 404</h2>
+                <div class="error-actions">
+                    <a href="/" class="btn btn-primary btn-lg"><i class="fa fa-home mr-2"></i>
+                        Перейти на главную </a><a href="#" class="btn btn-default btn-lg"><i class="fa fa-envelope mr-2"></i>Служба поддержки </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:42:"Страница не найдена (404)";s:3:"url";s:4:"/404";s:6:"layout";s:4:"main";s:9:"is_hidden";s:1:"0";}}

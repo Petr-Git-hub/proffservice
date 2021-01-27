@@ -1,0 +1,24 @@
+items:
+    -
+        title: 'Все услуги'
+        type: cms-page
+        code: ''
+        reference: category
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Наши контакты'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: contacts
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: компания
